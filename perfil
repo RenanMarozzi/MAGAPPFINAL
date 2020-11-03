@@ -1,0 +1,95 @@
+<ion-button routerLink="/cadastro" name ="add-circle"></ion-button>
+<ion-content>
+
+  <ion-avatar>
+    <img src="https://veja.abril.com.br/wp-content/uploads/2020/09/Bolsonaro-onu-discurso.jpg">
+  </ion-avatar>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Nome completo:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-input disabled value="Renan Gomes Marozzi"></ion-input>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Data de nascimento:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-input disabled value="25/10/2000"></ion-input>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Sexo:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-input disabled value="Masculino"></ion-input>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Estado civil:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-input disabled value="Solteiro"></ion-input>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Endereço:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-input disabled value="Rua inês Monteiro, 99"></ion-input>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Telefone:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-input disabled value="11983044464"></ion-input>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Email:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-input disabled value="remarozzi@hotmail.com"></ion-input>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Data de batismo:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-input disabled value="06/2018"></ion-input>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Nivel de treinamento:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-input disabled value="Maturidade"></ion-input>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Importante saber:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-textarea disabled readonly value="Um dos mais brilhantes cidadãos brasileiros, Darcy Ribeiro provou ao mundo que um
+      homem de nada mais precisa além da coragem e da força de vontade para modificar aquilo que, por covardia, simplesmente
+      ignoramos. Ouvi-lo, mesmo que por alguns instantes, nos levava a conhecer sua sabedoria e simplicidade, era um
+      verdadeiro intelectual cuja convivência com os índios o fez adquirir invejável formação humanística.">
+      </ion-textarea>
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
