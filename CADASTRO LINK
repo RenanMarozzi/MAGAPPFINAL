@@ -1,0 +1,134 @@
+<ion-content>
+
+  <ion-icon name="person-circle-outline"></ion-icon>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Nome completo:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+    <ion-item>
+      <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+    </ion-item>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Data de nascimento:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Sexo:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+      </ion-item>
+     </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Estado civil:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Endereço:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Telefone:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Data de batismo:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Nivel de treinamento:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Importante saber:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+ <ion-item>
+      <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+    </ion-item>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Email:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Senha:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-title>Confirmar senha:</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+      </ion-item>
+    </ion-card-content>
+
+  </ion-card>
+
+  <div tappable (click)=" onClickViewDetail()">
+    <ion-button routerLink="home" size="large">cancelar</ion-button>
+    <ion-button routerLink="home" size="large">Cadastrar</ion-button>
+  </div>
+  
+</ion-content>
+
