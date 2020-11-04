@@ -9,7 +9,7 @@
 
     <ion-card-content>
     <ion-item>
-      <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+      <ion-textarea placeholder="Enter more information here..."[(ngModel)]="Nome" name="Nome" ngModel></ion-textarea>
     </ion-item>
     </ion-card-content>
 
@@ -19,7 +19,7 @@
 
     <ion-card-content>
       <ion-item>
-        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+        <ion-textarea placeholder="Enter more information here..."[(ngModel)]="DataNascimento" name="DataNascimento" ngModel></ion-textarea>
       </ion-item>
     </ion-card-content>
 
@@ -29,7 +29,7 @@
 
     <ion-card-content>
       <ion-item>
-        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+        <ion-textarea placeholder="Enter more information here..."[(ngModel)]="Sexo" name="Sexo" ngModel></ion-textarea>
       </ion-item>
      </ion-card-content>
 
@@ -39,7 +39,7 @@
 
     <ion-card-content>
       <ion-item>
-        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+        <ion-textarea placeholder="Enter more information here..."[(ngModel)]="EstadoCivil" name="EstadoCivil" ngModel></ion-textarea>
       </ion-item>
     </ion-card-content>
 
@@ -49,7 +49,7 @@
 
     <ion-card-content>
       <ion-item>
-        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+        <ion-textarea placeholder="Enter more information here..."[(ngModel)]="Endereco" name="Endereco" ngModel></ion-textarea>
       </ion-item>
     </ion-card-content>
 
@@ -59,7 +59,7 @@
 
     <ion-card-content>
       <ion-item>
-        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+        <ion-textarea placeholder="Enter more information here..."[(ngModel)]="Telefone" name="Telefone" ngModel></ion-textarea>
       </ion-item>
     </ion-card-content>
 
@@ -69,7 +69,7 @@
 
     <ion-card-content>
       <ion-item>
-        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+        <ion-textarea placeholder="Enter more information here..."[(ngModel)]="DtBatismo" name="DtBatismo" ngModel></ion-textarea>
       </ion-item>
     </ion-card-content>
 
@@ -79,7 +79,7 @@
 
     <ion-card-content>
       <ion-item>
-        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+        <ion-textarea placeholder="Enter more information here..."[(ngModel)]="NvlTreinamento" name="NvlTreinamento" ngModel></ion-textarea>
       </ion-item>
     </ion-card-content>
 
@@ -89,7 +89,7 @@
 
     <ion-card-content>
  <ion-item>
-      <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+      <ion-textarea placeholder="Enter more information here..."[(ngModel)]="SaberImportante" name="SaberImportante" ngModel></ion-textarea>
     </ion-item>
     </ion-card-content>
 
@@ -99,7 +99,7 @@
 
     <ion-card-content>
       <ion-item>
-        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+        <ion-textarea placeholder="Enter more information here..."[(ngModel)]="Email" name="Email" ngModel></ion-textarea>
       </ion-item>
     </ion-card-content>
 
@@ -109,7 +109,7 @@
 
     <ion-card-content>
       <ion-item>
-        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+        <ion-textarea placeholder="Enter more information here..."[(ngModel)]="Senha" name="Senha" ngModel></ion-textarea>
       </ion-item>
     </ion-card-content>
 
@@ -119,15 +119,15 @@
 
     <ion-card-content>
       <ion-item>
-        <ion-textarea placeholder="Enter more information here..."></ion-textarea>
+        <ion-textarea placeholder="Enter more information here..."[(ngModel)]="ConfSenha" name="Confsenha" ngModel></ion-textarea>
       </ion-item>
     </ion-card-content>
 
   </ion-card>
 
-  <div tappable (click)=" onClickViewDetail()">
+  <div tappable>
    <ion-button routerLink="home" size="large">cancelar</ion-button>
-    <ion-button routerLink="home" size="large">Cadastrar</ion-button>
+    <ion-button (click)="Cadastrar()" size="large">Cadastrar</ion-button>
   </div>
 </ion-content>
 
