@@ -1,5 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { UsuariosService } from '../services/usuarios.service';
+interface Usuario {
+  Nome: String;
+  DataNascimento: String;
+  Sexo: String;
+  EstadoCivil: String;
+  Endereco: String;
+  Telefone: String;
+  DtBatismo: String;
+  NvlTreinamento: String;
+  SaberImportante: String;
+  Email: String;
+  Senha: String;
+
+}
 
 @Component({
   selector: 'app-cadastro',
@@ -9,16 +23,18 @@ import { UsuariosService } from '../services/usuarios.service';
 export class CadastroPage implements OnInit {
   Nome: String;
   DataNascimento: String;
-  sexo: String;
+  Sexo: String;
   EstadoCivil: String;
   Endereco: String;
-  telefone: String;
+  Telefone: String;
   DtBatismo: String;
   NvlTreinamento: String;
   SaberImportante: String;
   Email: String;
   Senha: String;
   ConfSenha: String;
+
+  usuario: Usuario;
 
   constructor(private usuariosService: UsuariosService) { }
 
@@ -27,7 +43,10 @@ export class CadastroPage implements OnInit {
   }
 
   Cadastrar() {
-    this.usuariosService.CadastraUsuario(this.Nome, this.DataNascimento, this.sexo, this.EstadoCivil, this.Endereco, this.telefone, this.DtBatismo, this.NvlTreinamento, this.SaberImportante, this.Email, this.Senha, this.ConfSenha);
+    this.usuario = {
+      Nome: this.Nome, DataNascimento :this.Nome, Sexo: this.Sexo, EstadoCivil: this.EstadoCivil, Endereco: this.Endereco, Telefone: this.Telefone, DtBatismo: this.DtBatismo, NvlTreinamento: this.NvlTreinamento, SaberImportante: this.SaberImportante, Email: this.Email, Senha:this.Senha
+      }
+    this.usuariosService.CadastraUsuario( this.usuario );
   }
 
 }
