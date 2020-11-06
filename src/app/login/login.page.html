@@ -7,11 +7,11 @@
 
       <ion-list>
       <ion-item>
-      <ion-input placeholder="email" [(ngmode1)]="email"></ion-input>
+      <ion-input placeholder="email" [(ngModel)]="Email" name="Email" ngModel></ion-input>
       </ion-item>
       <ion-item>
-      <ion-input placeholder="senha" [(ngmode1)]="senha"></ion-input>
+      <ion-input placeholder="senha" [(ngModel)]="Senha" name="Senha" ngModel></ion-input>
       </ion-item>
   </ion-list>
- <ion-button routerLink="/home" full (click)="login()">Login</ion-button>
+ <ion-button (click)="Login()">Login</ion-button>
 </ion-content>

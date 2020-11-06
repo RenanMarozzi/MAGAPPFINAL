@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UsuariosService } from '../services/usuarios.service';
+
 interface Usuario {
   Nome: String;
   DataNascimento: String;
@@ -44,9 +45,11 @@ export class CadastroPage implements OnInit {
 
   Cadastrar() {
     this.usuario = {
-      Nome: this.Nome, DataNascimento :this.Nome, Sexo: this.Sexo, EstadoCivil: this.EstadoCivil, Endereco: this.Endereco, Telefone: this.Telefone, DtBatismo: this.DtBatismo, NvlTreinamento: this.NvlTreinamento, SaberImportante: this.SaberImportante, Email: this.Email, Senha:this.Senha
+      Nome: this.Nome, DataNascimento :this.DataNascimento, Sexo: this.Sexo, EstadoCivil: this.EstadoCivil, Endereco: this.Endereco, Telefone: this.Telefone, DtBatismo: this.DtBatismo, NvlTreinamento: this.NvlTreinamento, SaberImportante: this.SaberImportante, Email: this.Email, Senha:this.Senha
       }
     this.usuariosService.CadastraUsuario( this.usuario );
+    
+
   }
 
 }

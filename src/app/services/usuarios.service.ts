@@ -21,20 +21,22 @@ interface Usuario {
   providedIn: 'root'
 })
 export class UsuariosService {
-  
+
   constructor(private storage: Storage) { }
   private usuarios = [];
-  CadastraUsuario( usuario: Usuario) {
-       
-  this.usuarios.push ({ ... usuario});
-  this.storage.set ('usuarios', this.usuarios);
+
+  CadastraUsuario(usuario: Usuario) {
+
+    this.usuarios.push({ ...usuario });
+    this.storage.set('usuarios', this.usuarios);
 
 
   }
 
-  ListaPerfil() {
-
-
+  ListaPerfil(): any {
+    return this.storage.get('usuarios').then(usuarios => {
+      return usuarios;
+    });
   }
 
   ListaCelula() {
@@ -42,9 +44,15 @@ export class UsuariosService {
 
   }
 
-  login() {
-
-
+  login(Email: String, Senha: String): any {
+    return this.storage.get('usuarios').then(usuarios => {
+      for(let i=0; i<usuarios.length; i++){
+        if (usuarios[i].Email == Email && usuarios[i].Senha == Senha) {
+          return usuarios[i];
+        }
+      };
+      
+     });
   }
 
 
