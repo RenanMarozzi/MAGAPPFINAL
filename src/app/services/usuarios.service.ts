@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { TestBed } from '@angular/core/testing';
 import { Storage } from '@ionic/storage';
 
 interface Usuario {
@@ -23,6 +24,19 @@ interface Usuario {
 export class UsuariosService {
 
   constructor(private storage: Storage) { }
+  UsuarioAdm: Usuario = {
+    Nome: 'administrador',
+    DataNascimento: '07/11/1998',
+    Sexo: 'Masculino',
+    EstadoCivil: 'Solteiro',
+    Endereco: 'Avenida Teste, 1000',
+    Telefone: '(11) 9799-7070',
+    DtBatismo: '14/07/2012',
+    NvlTreinamento: 'Basico',
+    SaberImportante: 'Nada a Declarar',
+    Email: 'adm@app.com.br',
+    Senha: '123456'
+  };
   private usuarios = [];
 
   CadastraUsuario(usuario: Usuario) {
@@ -35,9 +49,9 @@ export class UsuariosService {
 
   ListaPerfil(): any {
     return this.storage.get('UsuarioLogado');
- 
+
   }
-  UsuarioLogado(usuario: Usuario) {    
+  UsuarioLogado(usuario: Usuario) {
     this.storage.set('UsuarioLogado', usuario);
 
 
@@ -45,12 +59,20 @@ export class UsuariosService {
 
   login(Email: String, Senha: String): any {
     return this.storage.get('usuarios').then(usuarios => {
-      for (let i = 0; i < usuarios.length; i++) {
-        if (usuarios[i].Email == Email && usuarios[i].Senha == Senha) {
-          return usuarios[i];
-        }
-      };
-
+      if (usuarios == null && (Email != 'adm@app.com.br' && Senha != '123456')) {
+        this.CadastraUsuario(this.UsuarioAdm);
+      } else if (usuarios == null && (Email=='adm@app.com.br' && Senha=='123456')){
+        this.CadastraUsuario(this.UsuarioAdm);
+        return this.UsuarioAdm
+        
+      }
+      else {
+        for (let i = 0; i < usuarios.length; i++) {
+          if (usuarios[i].Email == Email && usuarios[i].Senha == Senha) {
+            return usuarios[i];
+          }
+        };
+      }
     });
   }
 

@@ -32,17 +32,17 @@ export class ProfilePage implements OnInit {
   
   ListarPerfil(){
     this.usuariosService.ListaPerfil().then(usuarios => {
-      this.Nome= usuarios[0].Nome;
-      this.DataNascimento= usuarios[0].DataNascimento;
-      this.Sexo= usuarios[0].Sexo;
-      this.EstadoCivil= usuarios[0].EstadoCivil;
-      this.Endereco= usuarios[0].Endereço; 
-      this.Telefone= usuarios[0].Telefone;
-      this.DtBatismo= usuarios[0].DtBatismo;
-      this.NvlTreinamento= usuarios[0].NvlTreinamento;
-      this.SaberImportante= usuarios[0].SaberImportante;
-      this.Email= usuarios[0].Email;
-      this.Senha= usuarios[0].Senha;
+      this.Nome= usuarios.Nome;
+      this.DataNascimento= usuarios.DataNascimento;
+      this.Sexo= usuarios.Sexo;
+      this.EstadoCivil= usuarios.EstadoCivil;
+      this.Endereco= usuarios.Endereço; 
+      this.Telefone= usuarios.Telefone;
+      this.DtBatismo= usuarios.DtBatismo;
+      this.NvlTreinamento= usuarios.NvlTreinamento;
+      this.SaberImportante= usuarios.SaberImportante;
+      this.Email= usuarios.Email;
+      this.Senha= usuarios.Senha;
     });
 
 
