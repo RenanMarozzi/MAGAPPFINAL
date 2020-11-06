@@ -11,7 +11,7 @@
     </ion-card-header>
 
     <ion-card-content>
-      <ion-input disabled value="Renan Gomes Marozzi"></ion-input>
+      <ion-input [(ngModel)]="Nome" name="Nome" ngModel></ion-input>
     </ion-card-content>
 
     <ion-card-header>
@@ -19,7 +19,7 @@
     </ion-card-header>
 
     <ion-card-content>
-      <ion-input disabled value="25/10/2000"></ion-input>
+      <ion-input [(ngModel)]="DataNascimento" name="DataNascimento" ngModel></ion-input>
     </ion-card-content>
 
     <ion-card-header>
@@ -27,7 +27,7 @@
     </ion-card-header>
 
     <ion-card-content>
-      <ion-input disabled value="Masculino"></ion-input>
+      <ion-input [(ngModel)]="Sexo" name="Sexo" ngModel></ion-input>
     </ion-card-content>
 
     <ion-card-header>
@@ -35,7 +35,7 @@
     </ion-card-header>
 
     <ion-card-content>
-      <ion-input disabled value="Solteiro"></ion-input>
+      <ion-input [(ngModel)]="EstadoCivil" name="EstadoCivil" ngModel></ion-input>
     </ion-card-content>
 
     <ion-card-header>
@@ -43,7 +43,7 @@
     </ion-card-header>
 
     <ion-card-content>
-      <ion-input disabled value="Rua inês Monteiro, 99"></ion-input>
+      <ion-input [(ngModel)]="Endereco" name="Endereco" ngModel></ion-input>
     </ion-card-content>
 
     <ion-card-header>
@@ -51,7 +51,7 @@
     </ion-card-header>
 
     <ion-card-content>
-      <ion-input disabled value="11983044464"></ion-input>
+      <ion-input [(ngModel)]="Telefone" name="Telefone" ngModel></ion-input>
     </ion-card-content>
 
     <ion-card-header>
@@ -59,7 +59,7 @@
     </ion-card-header>
 
     <ion-card-content>
-      <ion-input disabled value="remarozzi@hotmail.com"></ion-input>
+      <ion-input [(ngModel)]="Email" name="Email" ngModel></ion-input>
     </ion-card-content>
 
     <ion-card-header>
@@ -67,7 +67,7 @@
     </ion-card-header>
 
     <ion-card-content>
-      <ion-input disabled value="06/2018"></ion-input>
+      <ion-input [(ngModel)]="DtBatismo" name="DtBatismo" ngModel></ion-input>
     </ion-card-content>
 
     <ion-card-header>
@@ -75,7 +75,7 @@
     </ion-card-header>
 
     <ion-card-content>
-      <ion-input disabled value="Maturidade"></ion-input>
+      <ion-input [(ngModel)]="NvlTreinamento" name="NvlTreinamento" ngModel></ion-input>
     </ion-card-content>
 
     <ion-card-header>
@@ -83,10 +83,7 @@
     </ion-card-header>
 
     <ion-card-content>
-      <ion-textarea disabled readonly value="Um dos mais brilhantes cidadãos brasileiros, Darcy Ribeiro provou ao mundo que um
-      homem de nada mais precisa além da coragem e da força de vontade para modificar aquilo que, por covardia, simplesmente
-      ignoramos. Ouvi-lo, mesmo que por alguns instantes, nos levava a conhecer sua sabedoria e simplicidade, era um
-      verdadeiro intelectual cuja convivência com os índios o fez adquirir invejável formação humanística.">
+      <ion-textarea [(ngModel)]="SaberImportante" name="SaberImportante" ngModel>
       </ion-textarea>
     </ion-card-content>
 

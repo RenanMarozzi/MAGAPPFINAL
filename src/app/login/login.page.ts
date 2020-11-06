@@ -19,6 +19,9 @@ export class LoginPage implements OnInit {
     this.usuariosService.login(this.Email, this.Senha).then(usuarios => {
       if(usuarios!= undefined) {
         this.router.navigate(["/home"]);
+        this.Email='';
+        this.Senha='';
+        this.usuariosService.UsuarioLogado(usuarios);
       } else{
         this.presentToast('Credenciais Invalidas');
       }

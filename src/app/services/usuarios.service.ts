@@ -34,25 +34,24 @@ export class UsuariosService {
   }
 
   ListaPerfil(): any {
-    return this.storage.get('usuarios').then(usuarios => {
-      return usuarios;
-    });
+    return this.storage.get('UsuarioLogado');
+ 
   }
-
-  ListaCelula() {
+  UsuarioLogado(usuario: Usuario) {    
+    this.storage.set('UsuarioLogado', usuario);
 
 
   }
 
   login(Email: String, Senha: String): any {
     return this.storage.get('usuarios').then(usuarios => {
-      for(let i=0; i<usuarios.length; i++){
+      for (let i = 0; i < usuarios.length; i++) {
         if (usuarios[i].Email == Email && usuarios[i].Senha == Senha) {
           return usuarios[i];
         }
       };
-      
-     });
+
+    });
   }
 
 
